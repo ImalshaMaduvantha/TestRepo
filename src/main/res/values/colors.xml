@@ -9,4 +9,7 @@
     <color name="green">#2D851D</color>
     <color name="text">#FFFFFF</color>
     <color name="tv_background">#169FD2</color>
+    <color name="vp_background">#169FD2</color>
+    <color name="blue_button">#3AAEFF</color>
+    <color name="dark_blue">#536DFE</color>
 </resources>

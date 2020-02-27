@@ -27,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
         tblv = findViewById(R.id.tabView);
         tblv.setupWithViewPager(viewpager);
+
+        tblv.getTabAt(0).setIcon(R.drawable.add);
+        tblv.getTabAt(1).setIcon(R.drawable.search);
+        tblv.getTabAt(2).setIcon(R.drawable.all);
+        tblv.getTabAt(3).setIcon(R.drawable.other);
     }
 
 }

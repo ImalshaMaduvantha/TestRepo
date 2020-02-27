@@ -2,7 +2,56 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@android:color/holo_blue_light"
     >
+
+    <EditText
+        android:id="@+id/te_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textColor="@color/text"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/te_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age"
+        android:textColor="@color/text"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/te_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Marks"
+        android:textColor="@color/text"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/data_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSERT"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:textAlignment="center"
+        android:layout_margin="20dp"/>
 
 </LinearLayout>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,9 +18,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="fakeBook"
+            android:textColor="@color/text"
             android:background="@color/tv_background"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
             />
 
     </LinearLayout>
@@ -52,9 +53,12 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabView"
+            app:tabMode="fixed"
             style="@style/Widget.Design.TabLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:background="@color/vp_background"
+            />
 
     </LinearLayout>
 

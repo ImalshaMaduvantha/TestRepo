@@ -34,7 +34,26 @@ public class MyFragmentAdapter extends FragmentPagerAdapter {
 
     @Nullable
     @Override
-    public CharSequence getPageTitle(int position) {
-        return "Page"+(position+1);
+    public String getPageTitle(int position) {
+        String name="";
+
+
+
+        switch (position){
+            case 0 :
+                name = "ADD";
+                break;
+            case  1 :
+                name = "SEARCH";
+                break;
+            case  2 :
+                name = "ALL";
+                break;
+            case  3 :
+                name = "OTHERS";
+                break;
+        }
+
+        return name;
     }
 }
