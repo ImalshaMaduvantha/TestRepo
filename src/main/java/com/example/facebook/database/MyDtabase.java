@@ -33,7 +33,6 @@ public class MyDtabase extends SQLiteOpenHelper {
     // SQL quaries
     public static final String DROP_TABLE = "DROP TABLE IF EXISTS "+STUDENT_TABLE;
     public static final String SELECT_STUDENTS = "SELECT * FROM "+STUDENT_TABLE;
-    public static final String SELECT_A_STUDENT = "SELECT * FROM "+STUDENT_TABLE;
 
     public MyDtabase(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -62,30 +61,6 @@ public class MyDtabase extends SQLiteOpenHelper {
         catch (Exception e){}
 
         return status;
-    }
-
-    public void getStudent(String name){
-        SEARCH_NAME = name;
-        SQLiteDatabase db = getWritableDatabase();
-        Cursor cursor = db.rawQuery(SELECT_A_STUDENT, null);
-
-        if (cursor.moveToFirst()){
-            do {
-                Log.d(TAG, "getOneStudent :  " +"    Name : "+ cursor.getString(cursor.getColumnIndex(STUDENT_NAME))
-                        +"  Age : "+ cursor.getString(cursor.getColumnIndex(STUDENT_AGE))
-                        +"  Marks : "+ cursor.getString(cursor.getColumnIndex(STUDENT_MARK))
-                );
-            } while (cursor.moveToNext());
-        }
-        db.close();
-    }
-
-
-    public Cursor getAllStudets() {
-        SQLiteDatabase db = getWritableDatabase();
-        //SQL Result taken to cursor
-        Cursor cursor = db.rawQuery(SELECT_STUDENTS, null);
-        return cursor;
     }
 
 }
